@@ -23,22 +23,3 @@ var colorTemplate = _.map(colors, function(colorName){
 
 var destination=document.querySelector('#colorTarget');
 destination.innerHTML=colorTemplate.join('');
-
-/*
-console.log(colorString);
-console.log(combinedTemplate);
-
-
-/*var templateString = document
-                     .getElementById('nameTemplate')
-                     .innerHTML;
-var nameTemplate = _.template(templateString);
-
-var compiledTemplate = nameTemplate({
-  name: 'bill'
-});
-
-console.log(templateString);
-console.log(compiledTemplate);
-
-document.getElementById('main');*/
