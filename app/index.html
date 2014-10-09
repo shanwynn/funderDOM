@@ -1,13 +1,19 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <title>Welcome to the FunderDOM</title>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+  <meta charset="utf-8">
+    <title>W O R S T  A C C O R D I O N. E V E R.</title>
+    <link rel="stylesheet" type="text/css" href="styles/main.css">
   </head>
   <body>
     <header>
-      <h1>F<em>under</em>DOM</h1>
+      <!--<h1>F<em>under</em>DOM</h1>
       <hr></hr>
+      <div class='messages'>
+      </div>
     </header>
-
     <section id='main'>
       <nav>
         <ul>
@@ -18,13 +24,40 @@
         </nav>
         <div id='colorTarget'>
         </div>
+        <button id='reset'>Reset</button>
+      </section> -->
+        <h1>W O R S T A C C O R D I O N. E V E R.</h1>
+      </header>
+        <nav class="accordion">
+          <ul>
+          <li class="title_1"><h2>Section #1</h2>
+          </li>
+              <p class="text_1">
+                Bacon ipsum dolor sit amet tongue hamburger swine cow prosciutto beef ribs tail sirloin
+                capicola chuck. Boudin tail pork belly, prosciutto corned beef salami ground round
+                tenderloin hamburger meatball. Rump sirloin spare ribs porchetta. Ham pastrami brisket
+                hamburger bacon fatback pancetta leberkas. Kevin kielbasa ball tip brisket tongue doner
+                strip steak turkey tri-tip ribeye short loin pastrami venison beef ribs.
+              </p>
+          <li class="title_2"><h2>Section #2</h2>
+          </li>
+              <p class="text_2">
+                Ham hock shoulder short ribs hamburger beef swine tri-tip filet mignon kielbasa t-bone.
+                Tenderloin swine kielbasa, landjaeger beef ribs porchetta frankfurter fatback turkey
+                tri-tip leberkas ham hamburger ham hock beef. Pork chop biltong porchetta shankle,
+                brisket ham chuck swine tail. Ham turducken ribeye drumstick biltong.
+              </p>
+        </ul>
+      </nav>
       </section>
 
     <script id='colorTemplate' type="text/template">
       <p><%= color %></p>
     </script>
+    <script src='jquery/dist/jquery.js'></script>
     <script src='underscore/underscore.js'></script>
-    <script src='scripts/main.js'</script>
-    <script src='scripts/main.js'</script>
+    <script src='scripts/main.js'></script>
+    <script src='scripts/funQuery.js'></script>
+    <footer></footer>
   </body>
 </html>

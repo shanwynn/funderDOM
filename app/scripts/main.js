@@ -1,4 +1,4 @@
-var header = document.getElementsByTagName('header');
+/*var header = document.getElementsByTagName('header');
   header[0].style.color= "red";
 
 var middleNav = document.getElementsByTagName('li')[1];
@@ -22,4 +22,19 @@ var colorTemplate = _.map(colors, function(colorName){
 });
 
 var destination=document.querySelector('#colorTarget');
-destination.innerHTML=colorTemplate.join('');
+destination.innerHTML=colorTemplate.join('');*/
+
+$('.title_1').on('mouseover', function (event) {
+$('.text_1').show('active');
+});
+$('.title_2').on('mouseout', function (event) {
+$('.text_2').hide('active');
+});
+
+
+$('.title_2').on('mouseover', function (event) {
+$('.text_2').show('active');
+});
+$('.title_1').on('mouseout', function (event) {
+$('.text_1').hide('active');
+});
