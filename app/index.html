@@ -4,12 +4,13 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
   <meta charset="utf-8">
+  <!-- Meta sould be indented like the other tags to be consistent -->
     <title>W O R S T  A C C O R D I O N. E V E R.</title>
     <link rel="stylesheet" type="text/css" href="styles/main.css">
   </head>
   <body>
     <header>
-      <!--<h1>F<em>under</em>DOM</h1>
+      <h1>F<em>under</em>DOM</h1>
       <hr></hr>
       <div class='messages'>
       </div>
@@ -19,45 +20,55 @@
         <ul>
           <li>About</li>
           <li><span class='em'>Blog</span></li>
-            <li>Contact</li>
+            <li>Contact</li> <!-- Contact li should be indented to be consistent with other li's -->
           </ul>
         </nav>
+        <!-- The next few lines need to be outdented consistently -->
         <div id='colorTarget'>
         </div>
         <button id='reset'>Reset</button>
-      </section> -->
+      </section>
         <h1>W O R S T A C C O R D I O N. E V E R.</h1>
-      </header>
+      </header> <!-- You're closing your header tag twice :( -->
         <nav class="accordion">
+          <!-- All of this identation is a little awkward. I'm going to go ahead and make some changes to it
+          Note how the identation can help give your eye a hint as to what elements are inside other elements -->
           <ul>
-          <li class="title_1"><h2>Section #1</h2>
-          </li>
-              <p class="text_1">
+            <li class="title_1">
+              <h2>Section #1</h2>
+            </li>
+            <p class="text_1">
                 Bacon ipsum dolor sit amet tongue hamburger swine cow prosciutto beef ribs tail sirloin
                 capicola chuck. Boudin tail pork belly, prosciutto corned beef salami ground round
                 tenderloin hamburger meatball. Rump sirloin spare ribs porchetta. Ham pastrami brisket
                 hamburger bacon fatback pancetta leberkas. Kevin kielbasa ball tip brisket tongue doner
                 strip steak turkey tri-tip ribeye short loin pastrami venison beef ribs.
-              </p>
-          <li class="title_2"><h2>Section #2</h2>
-          </li>
-              <p class="text_2">
+            </p>
+            <li class="title_2"><h2>Section #2</h2>
+            </li>
+            <p class="text_2">
                 Ham hock shoulder short ribs hamburger beef swine tri-tip filet mignon kielbasa t-bone.
                 Tenderloin swine kielbasa, landjaeger beef ribs porchetta frankfurter fatback turkey
                 tri-tip leberkas ham hamburger ham hock beef. Pork chop biltong porchetta shankle,
                 brisket ham chuck swine tail. Ham turducken ribeye drumstick biltong.
-              </p>
+            </p>
+            <!-- So here you have li - p - li - p inside your ul. The browser may render this, but for all intents and purposes it is an error.
+                 You'd want to have your p tags nested inside some li. either the same one with the h2 or a different one
+                 
+                 Also keep in mind that with :nth-of-type() in css you rarely need (nor want) to label an element with a number -->
         </ul>
-      </nav>
-      </section>
+        </nav>
+      </section><!-- You're closing this section, but there is no section opened -->
 
     <script id='colorTemplate' type="text/template">
       <p><%= color %></p>
     </script>
+    
+    <!-- Try to get into the habit of including a empty line or two at the end before including the scripts -->
     <script src='jquery/dist/jquery.js'></script>
     <script src='underscore/underscore.js'></script>
     <script src='scripts/main.js'></script>
     <script src='scripts/funQuery.js'></script>
-    <footer></footer>
+    <footer></footer> <!-- The footer should be above all these script tags and the template --></-->
   </body>
 </html>

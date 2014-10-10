@@ -61,6 +61,7 @@ li {
 
 .text_1 {
   overflow: hidden;
+  // Why are these lines indented so much? :[
 	max-height: 300px;
 
 	transition-property: all;
@@ -68,8 +69,25 @@ li {
 
 }
 
+/*
+
+The classes .text_1 and .text_2 are completely identical, so in order to D.R.Y up our code, we will want to clean this up.
+Luckily CSS figures this may happen at some point, if you use a comma in your css selector, you can have one block of css
+style two different tags.
+
+  .text_1,
+  .text_2 {
+  	overflow: hidden;
+  	max-height: 300px;
+  	transition-property: all;
+  	transition-duration: .5s;
+  }
+
+*/
+
 .text_2 {
   overflow: hidden;
+  // These are indented too much as well
 	max-height: 300px;
 
 	transition-property: all;
