@@ -1,4 +1,4 @@
-/*$('.messages').text('wooo. I am alive!')*/
+
 
 /*element[s].on(eventName, callBackFunction);*/
 
