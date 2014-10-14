@@ -25,16 +25,16 @@ var destination=document.querySelector('#colorTarget');
 destination.innerHTML=colorTemplate.join('');*/
 
 $('.title_1').on('mouseover', function (event) {
-$('.text_1').show('active');
+  $('.text_1').addClass('active');
 });
 $('.title_2').on('mouseout', function (event) {
-$('.text_2').hide('active');
+  $('.text_2').removeClass('active');
 });
 
 
 $('.title_2').on('mouseover', function (event) {
-$('.text_2').show('active');
+  $('.text_2').addClass('active');
 });
 $('.title_1').on('mouseout', function (event) {
-$('.text_1').hide('active');
+  $('.text_1').removeClass('active');
 });
